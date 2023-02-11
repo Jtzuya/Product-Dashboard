@@ -11,7 +11,7 @@
             <form action="login/validate" class="form--block" method="POST">
                 <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" />
                 <span>Email address:</span>
-                <input type="email" name="email" class="input--default" value="wtf@gmail.com">
+                <input type="email" name="email" class="input--default" value="login@gmail.com">
                 <span>Password:</span>
                 <input type="password" name="password" class="input--default" value="jlaksdasldjkasldaksjdl">
                 <input type="submit" value="Login" class="primary--btn">

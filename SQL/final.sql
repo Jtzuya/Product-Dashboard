@@ -73,13 +73,11 @@ CREATE TABLE IF NOT EXISTS `shopify`.`reviews` (
   CONSTRAINT `fk_reviews_products1`
     FOREIGN KEY (`product_id`)
     REFERENCES `shopify`.`products` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON UPDATE CASCADE ON DELETE CASCADE,
   CONSTRAINT `fk_reviews_users1`
     FOREIGN KEY (`user_id`)
     REFERENCES `shopify`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON UPDATE CASCADE ON DELETE CASCADE)
 ENGINE = InnoDB
 AUTO_INCREMENT = 13
 DEFAULT CHARACTER SET = utf8;
@@ -101,13 +99,11 @@ CREATE TABLE IF NOT EXISTS `shopify`.`replies` (
   CONSTRAINT `fk_replies_reviews1`
     FOREIGN KEY (`review_id`)
     REFERENCES `shopify`.`reviews` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON UPDATE CASCADE ON DELETE CASCADE,
   CONSTRAINT `fk_replies_users1`
     FOREIGN KEY (`user_id`)
     REFERENCES `shopify`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON UPDATE CASCADE ON DELETE CASCADE)
 ENGINE = InnoDB
 AUTO_INCREMENT = 21
 DEFAULT CHARACTER SET = utf8;

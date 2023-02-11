@@ -6,10 +6,17 @@ class User extends CI_Model {
     }
 
     public function create_user($user_data) {
+        $check_users_table = $this->db->query("SELECT * FROM users")->result_array();
+        $user_level = 0;
+        
+        if(count($check_users_table) < 1 || $check_users_table === NULL) {
+            $user_level = 9;
+        }
+
         $col = "user_level, first_name, last_name, email, password, created_at";
         $query = "INSERT INTO users ($col) VALUES (?,?,?,?,?,?)";
         $values = array(
-            0,
+            $user_level,
             $this->security->xss_clean($user_data['first_name']),
             $this->security->xss_clean($user_data['last_name']),
             $this->security->xss_clean($user_data['email']),

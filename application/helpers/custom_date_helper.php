@@ -23,8 +23,8 @@ if(!function_exists('custom_date')) {
             return $diff_min->format('%h') == 1 ? $diff_min->format('%h hour ago') : $diff_min->format('%h hours ago');
         } else if ($diff_min->format('%i') >= 1) {
             return $diff_min->format('%i') == 1 ? $diff_min->format('%i minute ago') : $diff_min->format('%i minutes ago');
-        } else if ($diff_min->format('%s') >= 1) {
-            return $diff_min->format('%s') == 1 ? $diff_min->format('%s second ago') : $diff_min->format('%s seconds ago');
+        } else if ($diff_min->format('%s') >= 0) {
+            return $diff_min->format('%s') == 0 || $diff_min->format('%s') == 1 ? $diff_min->format('%s second ago') : $diff_min->format('%s seconds ago');
         }
     }
 }
