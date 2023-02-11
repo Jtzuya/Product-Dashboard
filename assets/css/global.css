@@ -1,0 +1,253 @@
+:root {
+    --btn-width: 85px;
+}
+
+.page--width {
+    max-width: 1024px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+}
+
+.multi--nav a {
+    width: fit-content;
+    padding-right: 1.75rem
+}
+
+.a--default {
+    text-decoration: underline;
+    color: blue;
+}
+
+.form--block * {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0.5rem 1.25rem 0 0;
+}
+
+.form--block.reply,
+.each_reply {
+    margin-top: 0rem;
+    margin-left: 5rem;
+    width: calc(100% - 5rem);
+}
+
+.form--block.reply textarea {
+    height: 3rem;
+}
+
+.form--block.reply i {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form--block.reply .primary--btn {
+    width: auto;
+    margin-block: 1rem;
+}
+
+.primary--btn {
+    width: fit-content;
+    margin-left: calc(100% - var(--btn-width));
+    padding: 0.5rem 1.75rem;
+    margin-block: 2.5rem;
+    background-color: palegreen;
+    border: 2.25px solid rgb(0 0 0 / 15%);
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-transform: uppercase;
+}
+
+.primary--btn:hover {
+    background-color: #000;
+    color: palegreen;
+}
+
+.secondary--btn {
+    width: fit-content;
+    padding: 0.5rem 1.75rem;
+    background-color: white;
+    border: 2.25px solid rgb(0 0 0 / 15%);
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-transform: uppercase;
+}
+
+.secondary--btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+.input--default {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0;
+}
+
+.message:not(:empty) {
+    text-align: center;
+    padding: 2rem 4rem;
+    font-size: 10px;
+}
+
+.error {
+    color: crimson;
+}
+
+.success {
+    color: green;
+}
+
+.active--path {
+    font-weight: bold;
+}
+
+.admin h1,
+.admin div {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: middle;
+}
+
+.admin div {
+    text-align: right;
+}
+
+.form--block fieldset {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    width: auto;
+}
+
+.form--block fieldset .input--default {
+    min-width: 250px;
+    width: auto;
+    margin: 0;
+}
+
+.form--block fieldset .primary--btn {
+    margin-left: calc(94.5% - var(--btn-width));
+}
+
+legend {
+    max-width: fit-content;
+}
+
+.profile__wrapper form {
+    max-width: unset;
+    display: inline-block;
+}
+
+/* SHOW PRODUCT PAGE */
+.show h1 {
+    margin-bottom: 1.25rem;
+}
+
+.show form {
+    max-width: unset;
+    margin-top: 3rem;
+}
+
+.show textarea {
+    max-width: 100%;
+    padding: 0.75rem 1.25rem;
+    max-height: 120px;
+    overflow-y: scroll;
+    border: 2.25px solid rgb(0 0 0 / 75%);
+}
+
+.submit--btn__wrapper {
+    padding-top: 0;
+    max-width: unset;
+    padding-inline: 1.25rem;
+}
+
+.submit--btn__wrapper input {
+    text-align: right;
+}
+
+i {
+    font-size: 1.25rem;
+}
+
+.reviews section > p {
+    padding: 0.75rem 1.25rem;
+    border: 2.25px solid rgb(0 0 0 / 75%);
+    margin-top: 0.75rem;
+    min-height: 80px;
+    width: 100%;
+}
+
+.reviews section {
+    padding-block: 1.25rem;
+}
+
+.reviews div * {
+    width: calc(100%/2 - 5px);
+}
+
+.reviews div p {
+    display: inline-block;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.author span {
+    font-weight: normal;
+    font-size: normal;
+}
+
+.date_published {
+    text-align: right;
+    display: inline-block;
+}
+
+.sign_in_to_add_review {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: papayawhip;
+    background-color: #000;
+    padding: 0.5rem 1.25rem;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+    width: fit-content;
+    display: block;
+}
+
+.delete--product {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: blue;
+    padding-right: 0.75rem;
+    cursor: pointer;
+}
+
+.activate--styles {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255 255 255 / 70%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activate--styles p {
+    padding: 1.5rem 2.25rem;
+    /* background-color: rgb(255 255 255 / 100%); */
+    backdrop-filter: blur(10px);
+}
+
+.activate--styles a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.75rem 1.25rem;
+    border: 1.25px solid black;
+    background-color: palegreen;
+    margin-inline: 1rem;
+}

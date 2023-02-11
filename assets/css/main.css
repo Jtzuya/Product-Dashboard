@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    font-family: 'Baskerville';
+    letter-spacing: 2.25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+}
+
+header {
+    border-bottom: 2.25px solid black;
+}
+
+header * {
+    display: inline-block;
+    width: 49.5%;
+}
+
+header a:last-child {
+    text-align: right;
+}
+
+form {
+    max-width: 250px;
+    margin-top: 1.25rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border-radius: 0;
+    outline: none;
+}
+
+table {
+    background-color: #000;
+    margin-top: 2.75rem;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+th {
+    background-color: darkgray;
+}
+
+td {
+    background-color: white;
+}
+
+td a {
+    text-decoration: underline;
+    color: blue;
+    padding-inline: 0.5rem;
+}
+
+tr:nth-child(odd) td {
+    background-color: lightgray;
+}
